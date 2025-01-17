@@ -1,0 +1,101 @@
+@use './var' as *;
+
+@mixin grid-center-align {
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
+
+@mixin flex-center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@mixin lightBtn {
+    background-color: var(--imgBack);
+    color: var(--themeColor);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+@mixin darkBtn {
+    background-color: var(--themeColor);
+    color: var(--imgBack);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+@mixin dark-sub-btn {
+    background-color: var(--themeColor);
+    color: var(--imgBack);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+@mixin infoBtn {
+    background-color: var(--petaColor);
+    color: var(--imgBack);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 0;
+}
+
+@mixin shadowLightBtn {
+    background-color: transparent;
+    color: var(--themeColor);
+    padding: .5rem 1rem;
+    border: 0;
+    box-shadow: 0 0 10px var(--imgBack);
+    text-decoration: none;
+}
+
+@mixin themeBtn {
+    background-color: var(--themeColor);
+    color: var(--imgBack);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 0;
+}
+
+@mixin seller-box {
+    background-color: var(--imgBack);
+    border: 1px solid $borderColor;
+    border-radius: .5rem;
+}
+
+@mixin user-box {
+    background-color: white;
+    border: 1px solid $borderColor;
+    border-radius: .5rem;
+}
+
+@mixin custom-scrollbar {
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: darkgray;
+        border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--petaColor);
+    }
+}
